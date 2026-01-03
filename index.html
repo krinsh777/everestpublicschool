@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everest Public School</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body class="day-mode">
+    <!-- Side Navigation (Push Pattern) -->
+    <div id="mySidenav" class="sidenav">
+        <div class="sidenav-header">
+            <div class="sidenav-brand">
+                <img src="logo.png" alt="Everest Public School Logo" class="sidenav-logo">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            <div class="sidenav-branding-text">
+                <h2 class="school-name">Everest Public School</h2>
+                <p class="school-tagline">Our goal is to develop and meet the needs of each child so that he or she
+                    becomes a well-rounded tomorrow individual.</p>
+            </div>
+        </div>
+
+        <div class="sidenav-menu">
+            <a href="#home" class="menu-item" onclick="closeNav()"><i class="fas fa-home"></i> Home</a>
+            <a href="#about-us" class="menu-item" onclick="closeNav()"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="admission.html" class="menu-item"><i class="fas fa-user-plus"></i> Admission</a>
+            <a href="gallery.html" class="menu-item"><i class="fas fa-images"></i> Gallery</a>
+            <a href="#notice-board" class="menu-item" onclick="closeNav()"><i class="fas fa-bullhorn"></i> Notice</a>
+            <a href="#contact-us" class="menu-item contact-link" onclick="closeNav()"><i class="fas fa-envelope"></i>
+                Contact Us</a>
+
+            <div class="sidenav-info-wrap">
+                <div class="info-section">
+                    <p><i class="fas fa-phone"></i> +977 123-456-789</p>
+                    <p><i class="fas fa-envelope"></i> info@everestpublicschool.edu.np</p>
+                </div>
+
+                <div class="social-section">
+                    <h3>FOLLOW US</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Main Content Wrapper (Pushed by Sidenav) -->
+    <div id="main">
+        <div class="top-section">
+            <header class="header">
+                <div class="top-bar">
+                    <div class="container">
+                        <div class="contact-info">
+                            <a href="tel:+977123456789"><i class="fas fa-phone"></i> +977 123-456-789</a>
+                            <a href="mailto:info@everestpublicschool.edu.np"><i class="fas fa-envelope"></i>
+                                info@everestpublicschool.edu.np</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/photo/?fbid=568372239361537&set=a.122012700664162"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/?&"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <b>NEWS:</b>
+                    <marquee>Welcome to Everest Public School - Admissions for the academic year 2025 are now open.
+                        Apply
+                        today to secure your child's future!</marquee>
+                </div>
+            </header>
+        </div>
+        <div class="navbar-section">
+            <nav class="navbar navbar-desktop">
+                <div class="container">
+                    <div class="brand">
+                        <img src="logo.png" alt="Everest Public School Logo" class="logo">
+                    </div>
+                    <ul class="nav-menu nav-menu-desktop">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about-us">About</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#notice-board">Notice</a></li>
+                        <li><a href="#contact-us">Contact</a></li>
+                    </ul>
+                    <div class="nav-gif-container">
+                        <img src="nepal.gif" alt="Nepal Flag" class="nav-gif">
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-mobile">
+                <div class="container mobile-header-container">
+                    <div class="brand">
+                        <img src="logo.png" alt="Everest Public School Logo" class="logo">
+                        <div class="brand-text">Everest Public School</div>
+                    </div>
+
+                    <!-- Open Button for Push Nav -->
+                    <span class="mobile-toggle-btn" onclick="openNav()">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+            </nav>
+        </div>
+        <div class="bottom-section">
+            <section class="hero" id="home">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- First Slide with Content -->
+                        <div class="swiper-slide" style="background-image: url('slider1.jpg')">
+                            <div class="slide-content center-content">
+                                <h1 class="hero-title" data-aos="fade-up">Welcome to Everest Public School</h1>
+                                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Shaping futures through
+                                    excellence in education</p>
+                                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                                    <a href="admission.html" class="btn btn-primary">Apply Now</a>
+                                    <a href="#about-us" class="btn btn-secondary">Discover More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Additional Slides -->
+                        <div class="swiper-slide" style="background-image: url('slider2.jpg')"></div>
+                        <div class="swiper-slide" style="background-image: url('slider3.jpg')"></div>
+                        <div class="swiper-slide" style="background-image: url('slider4.jpg')"></div>
+                        <div class="swiper-slide" style="background-image: url('slider5.jpg')"></div>
+                    </div>
+                    <!-- Navigation Elements -->
+                    <div class="slider-nav">
+                        <button class="slider-btn prev" aria-label="Previous slide"></button>
+                        <button class="slider-btn next" aria-label="Next slide"></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-us section" id="about-us" data-aos="fade-up">
+                <div class="container">
+                    <h2 class="section-title" data-aos="fade-up">Introduction</h2>
+                    <div class="about-intro" data-aos="fade-up">
+                        <p>It is the aim of Everest Public School to provide the high-quality education that every
+                            student deserves. We appreciate diversity and realize that each student is unique,
+                            deserving to be treated as an individual with limitless potential. As a private English
+                            boarding school in the Madhesh Province, Everest Public School works hard to help every
+                            student find and explore new ways of learning.</p>
+
+                        <p>We are delivering continuous quality education by bringing out the best in students so
+                            they can rise to the top at the district level. At Everest, creativity is a factor for
+                            our great learners as our team provides students the opportunity to be explorers and
+                            acquire skills.</p>
+                    </div>
+
+                    <div class="about-details">
+                        <div class="about-text-content">
+                            <div class="about-item mission-section" data-aos="fade-right">
+                                <div class="about-item-image">
+                                    <img src="mission.png" alt="Our Mission">
+                                </div>
+                                <div class="about-item-text">
+                                    <h3>Our Mission</h3>
+                                    <p>Our mission is to empower students with knowledge, values, and confidence so they
+                                        can
+                                        succeed
+                                        in life. We aim to create a space where students think freely, dream big, and
+                                        develop
+                                        the
+                                        skills they need for the future.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-item vision-section" data-aos="fade-left">
+                                <div class="about-item-text">
+                                    <h3>Our Vision</h3>
+                                    <p>We want our students to become responsible, compassionate, and forward-thinking
+                                        citizens.
+                                        Our
+                                        vision is to prepare them for the real world, helping them develop not just
+                                        academic
+                                        excellence but also strong character and leadership skills.</p>
+                                </div>
+                                <div class="about-item-image">
+                                    <img src="vision.png" alt="Our Vision">
+                                </div>
+                            </div>
+
+                            <div class="about-item values-section" data-aos="fade-right">
+                                <div class="about-item-image">
+                                    <img src="values.png" alt="Core Values">
+                                </div>
+                                <div class="about-item-text">
+                                    <h3>Core Values</h3>
+                                    <ul>
+                                        <li><i class="fas fa-heart"></i> Integrity – Always doing the right thing.</li>
+                                        <li><i class="fas fa-handshake"></i> Respect – Treating everyone with kindness.
+                                        </li>
+                                        <li><i class="fas fa-star"></i> Excellence – Striving for the best in
+                                            everything.</li>
+                                        <li><i class="fas fa-lightbulb"></i> Innovation – Embracing new ideas and
+                                            creativity.
+                                        </li>
+                                        <li><i class="fas fa-home"></i> Community – Growing and supporting each other
+                                            like
+                                            family.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="about-item history-section" data-aos="fade-up">
+                                <div class="history-grid">
+                                    <div class="history-label">
+                                        <h3>Our History</h3>
+                                    </div>
+                                    <div class="history-content">
+                                        <div class="history-text">
+                                            <p>Established in 2051 BS, Everest Public School has been a trusted home for
+                                                learning
+                                                and
+                                                growth for years. From a small beginning, we have grown into a leading
+                                                institution,
+                                                known for academic excellence, innovation, and a strong sense of
+                                                community.</p>
+                                        </div>
+                                        <div class="history-timeline-wrap">
+                                            <div class="history-timeline">
+                                                <div class="timeline-track"></div>
+                                                <div class="milestone" data-year="2051">
+                                                    <div class="milestone-dot"><span>2051</span></div>
+                                                    <div class="milestone-label">Foundation</div>
+                                                </div>
+                                                <div class="milestone" data-year="2061">
+                                                    <div class="milestone-dot"><span>2061</span></div>
+                                                    <div class="milestone-label">Expansion</div>
+                                                </div>
+                                                <div class="milestone" data-year="2071">
+                                                    <div class="milestone-dot"><span>2071</span></div>
+                                                    <div class="milestone-label">Excellence Recognition</div>
+                                                </div>
+                                                <div class="milestone active" data-year="2082">
+                                                    <div class="milestone-dot current"><span>2082</span></div>
+                                                    <div class="milestone-label">Current Year</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="achievements-wrap" data-aos="fade-up">
+                            <div class="achievements-text">
+                                <h3>Our Achievements</h3>
+                                <p>We take pride in our students' success, especially topping Bardibas District with an
+                                    impressive GPA of 3.98. This achievement reflects the hard work, dedication, and
+                                    teamwork of
+                                    our students, teachers, and parents.</p>
+                            </div>
+                            <div class="about-image-new">
+                                <img src="about-us.png" alt="About Us">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="join-us-section" data-aos="fade-up">
+                        <h3>Join Us</h3>
+                        <p>At Everest Public School, we are more than a school—we are a family, a place of dreams, and a
+                            community that believes in every child's potential. Come, be a part of our journey! 💙✨</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="counter-section" data-aos="fade-up">
+                <div class="counter-container">
+                    <div class="counter-item" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fas fa-user-graduate"></i>
+                        <div class="counter" data-target="750">0</div>
+                        <div class="counter-title">Students</div>
+                    </div>
+                    <div class="counter-item">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <div class="counter" data-target="35">0</div>
+                        <div class="counter-title">Teachers</div>
+                    </div>
+                    <div class="counter-item">
+                        <i class="fa-solid fa-percent"></i>
+                        <div class="counter" data-target="98.97">0</div>
+                        <div class="counter-title">Success Rate</div>
+                    </div>
+                    <div class="counter-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <div class="counter" data-target="23">0</div>
+                        <div class="counter-title">Years Experience</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="messages" id="messages">
+                <div class="container">
+                    <div class="message-box" data-aos="fade-right">
+                        <div class="message-image">
+                            <img src="principal.jpg" alt="School Principal">
+                        </div>
+                        <div class="message-content">
+                            <h3>Principal's Message</h3>
+                            <p>"Welcome to Everest Public School, where we believe in nurturing not just students, but
+                                future leaders. Our commitment to academic excellence, combined with strong moral
+                                values,
+                                creates an environment where every child can flourish and reach their full potential."
+                            </p>
+                            <span class="signature">Mr.Tul Bahadur Magar</span>
+                            <span class="designation">Principal</span>
+                        </div>
+                    </div>
+
+                    <div class="message-box" data-aos="fade-left">
+                        <div class="message-content">
+                            <h3>Chairman's Message</h3>
+                            <p>"Our vision at Everest Public School is to create a learning environment that inspires
+                                innovation, creativity, and character development. We are committed to providing
+                                world-class
+                                education while maintaining our cultural values and traditions."</p>
+                            <span class="signature">Mr.Arun Karki</span>
+                            <span class="designation">Chairman</span>
+                        </div>
+                        <div class="message-image">
+                            <img src="chairman.jpg" alt="School Chairman">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery" id="gallery">
+                <div class="container">
+                    <h2 class="section-title" data-aos="fade-up">Our Gallery</h2>
+                    <div class="gallery-grid" data-aos="fade-up">
+                        <div class="gallery-item">
+                            <img src="img1.jpg" alt="School Building">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img2.jfif" alt="Science Lab">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img3.jpg" alt="Facilities">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img4.jfif" alt="Sports Activities">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img5.jfif" alt="Cultural Program">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img6.jpg" alt="Award Ceremony">
+                        </div>
+                    </div>
+                    <div class="view-more-btn" data-aos="fade-up">
+                        <a href="gallery.html" class="btn btn-primary">View More Photos</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="notice-board section" id="notice-board">
+                <div class="container">
+                    <h2 class="section-title" data-aos="fade-up">Notice Board</h2>
+                    <div class="notice-content" data-aos="fade-up" data-aos-delay="200">
+                        <marquee behavior="scroll" direction="up" scrollamount="5">
+                            <ul class="notice-list">
+                                <li>
+                                    <span class="notice-text">Annual Sports Day</span>
+                                    <span class="notice-date">15th December</span>
+                                </li>
+                                <li>
+                                    <span class="notice-text">Parent-Teacher Meeting</span>
+                                    <span class="notice-date">20th November</span>
+                                </li>
+                                <li>
+                                    <span class="notice-text">Apply for the 2025 session now!</span>
+                                    <span class="notice-date">Admissions Open</span>
+                                </li>
+                            </ul>
+                        </marquee>
+                    </div>
+                </div>
+            </section>
+
+            <section class="events-section section" id="events">
+                <div class="container">
+                    <div class="events-header" data-aos="fade-up">
+                        <div class="header-text">
+                            <h2 class="events-title">Recent & <br>Upcoming <span class="highlight">Events</span></h2>
+                            <div class="title-underline"></div>
+                        </div>
+                        <div class="header-action">
+                            <a href="#" class="btn btn-events">See More Events <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="events-content" data-aos="fade-up" data-aos-delay="200">
+                        <div class="no-events-placeholder">
+                            <div class="placeholder-accent"></div>
+                            <p>No recent or upcoming events found at the moment. Please stay tuned for updates!</p>
+                        </div>
+
+                        <!-- Placeholder for actual events if needed -->
+                        <div class="events-grid" style="display: none;">
+                            <div class="event-card">
+                                <!-- Event content here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-us" id="contact-us">
+                <div class="container">
+                    <h2 data-aos="fade-up">Contact Us</h2>
+                    <div class="contact-box" data-aos="zoom-in">
+                        <div class="contact-form-wrapper">
+                            <div class="contact-form">
+                                <h3>Send us a Message</h3>
+                                <form id="contact-form">
+                                    <input type="text" placeholder="Your Name" required data-aos="fade-right">
+                                    <input type="email" placeholder="Your Email" required data-aos="fade-left">
+                                    <textarea placeholder="Your Message" required data-aos="fade-up"></textarea>
+                                    <button type="submit" class="btn btn-unique" data-aos="zoom-in">Send
+                                        Message</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="contact-details-wrapper">
+                            <div class="contact-info" data-aos="fade-up">
+                                <h3>Get in Touch</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Everest Public School, Bardibas, Nepal</p>
+                                <p><i class="fas fa-phone"></i> +977 123-456-7890</p>
+                                <p><i class="fas fa-envelope"></i> info@everestpublicschool.edu.np</p>
+                                <div class="contact-social-icons">
+                                    <a
+                                        href="https://www.facebook.com/photo/?fbid=568372239361537&set=a.122012700664162"><i
+                                            class="fab fa-facebook"></i></a>
+                                    <a href="https://twitter.com/?&"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
+                                </div>
+                            </div>
+                            <div class="contact-map" data-aos="fade-left">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.247142237211!2d85.8964039!3d26.990730799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ec730c26f36c9f%3A0xc2df9a403167469!2sEverest%20Public%20School!5e0!3m2!1sen!2snp!4v1766209600159!5m2!1sen!2snp"
+                                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="admissions-wrapper">
+                <section class="admissions" id="admissions">
+                    <div class="container">
+                        <h2 data-aos="fade-up">Admissions</h2>
+                        <p data-aos="fade-up" data-aos-delay="200">
+                            Dream big for your child! Admissions for 2026 open at Everest Public School.
+                            Join our nurturing community where excellence meets opportunity. Secure their future today!
+                        </p>
+                        <div class="admissions-button" data-aos="fade-up" data-aos-delay="400">
+                            <a href="admission.html" class="btn btn-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="noticeModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-label">Admission Open !</div>
+                    <img src="notice.png" alt="Notice" class="modal-image">
+                    <div class="modal-text">
+                        <h2>Important Notice</h2>
+                        <p>Admissions for the academic year 2025 are now open. Apply today to secure your child's
+                            future!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-brand">
+                            <div class="brand-top">
+                                <div class="footer-logo">
+                                    <img src="logo.png" alt="Everest Public School Logo">
+                                </div>
+                                <div class="brand-info">
+                                    <div class="footer-title">Everest Public School</div>
+                                    <div class="footer-subtitle">Dedicated to quality education</div>
+                                </div>
+                            </div>
+                            <p class="footer-tagline">"Empowering Young Minds with Quality Education to Build Leaders of
+                                Today and Tomorrow "</p>
+                            <div class="footer-social">
+                                <h3>Follow Us</h3>
+                                <a href="https://www.facebook.com/photo/?fbid=568372239361537&set=a.122012700664162"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="https://twitter.com/?&"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about-us">About Us</a></li>
+                                <li><a href="#admission">Admission</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#contact-us">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-contact">
+                            <h3>Contact Us</h3>
+                            <address>
+                                <div class="contact-line"><i class="fas fa-map-marker-alt"></i><span> Everest Public
+                                        School,
+                                        Bardibas, Nepal</span></div>
+                                <div class="contact-line"><i class="fas fa-envelope"></i><a
+                                        href="mailto:info@everestpublicschool.edu.np">info@everestpublicschool.edu.np</a>
+                                </div>
+                                <div class="contact-line"><i class="fas fa-phone"></i><span><a
+                                            href="tel:4970590">01-4970590</a>, <a
+                                            href="tel:014970591">4970591</a></span>
+                                </div>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Everest Public School. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="fixed-controls">
+                <button id="back-to-top" aria-label="Back to top">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+                <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div> <!-- End #main -->
+
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="modal.js"></script>
+        <script src="init.js"></script>
+</body>
+
+</html>

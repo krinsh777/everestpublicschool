@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Everest Public School</title>
+    <link rel="stylesheet" href="style.css"> <!-- General styles first -->
+    <link rel="stylesheet" href="gallery.css"> <!-- Gallery specific styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="day-mode"> <!-- Start with day-mode -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <a href="tel:+9779863177515"><i class="fas fa-phone"></i> +977 9863177515</a>
+                    <a href="tel:+9779824863245">+977 9824863245</a>
+                    <a href="mailto:info@everestpublicschool.edu.np"><i class="fas fa-envelope"></i>
+                        info@everestpublicschool.edu.np</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/photo/?fbid=568372239361537&set=a.122012700664162"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/?&"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <b>NEWS:</b>
+            <marquee>Welcome to Everest Public School - Admissions for the academic year 2025 are now open. Apply today
+                to secure your child's future!</marquee>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <img src="logo.png" alt="Everest Public School Logo" class="logo">
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li> <!-- Mark as active -->
+                <li><a href="index.html#notice-board">Notice Board</a></li>
+                <li><a href="index.html#contact-us">Contact Us</a></li>
+            </ul>
+            <img src="nepal.gif" alt="GIF" class="nav-gif">
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Gallery</h2>
+
+            <!-- Gallery Navigation Tabs -->
+            <div class="gallery-nav" data-aos="fade-up" data-aos-delay="100">
+                <button class="gallery-tab active" data-category="all">All</button>
+                <button class="gallery-tab" data-category="academic">Academic</button>
+                <button class="gallery-tab" data-category="cultural">Cultural</button>
+                <button class="gallery-tab" data-category="tour">Tour</button>
+                <button class="gallery-tab" data-category="science">Science</button>
+                <button class="gallery-tab" data-category="sports">Sports</button>
+                <button class="gallery-tab" data-category="facilities">Facilities</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="gallery-grid" data-aos="fade-up" data-aos-delay="200">
+                <!-- Add gallery items here with data-category attribute -->
+                <!-- Example: -->
+                <div class="gallery-item" data-category="academic" data-aos="zoom-in">
+                    <img src="gallery1.jpg" alt="Academic Event 1">
+                    <div class="gallery-text-overlay">
+                        <h3>Academic Excellence</h3>
+                        <p>Celebrating student achievements.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="academic" data-aos="zoom-in">
+                    <img src="gallery3.jpg" alt="Academic Event 2">
+                    <div class="gallery-text-overlay">
+                        <h3>Learning Environment</h3>
+                        <p>Focused study sessions.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="academic" data-aos="zoom-in">
+                    <img src="gallery6.jpg" alt="Academic Event 3">
+                    <div class="gallery-text-overlay">
+                        <h3>Classroom Interaction</h3>
+                        <p>Engaging teaching methods.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="academic" data-aos="zoom-in">
+                    <img src="gallery8.jpg" alt="Academic Event 4">
+                    <div class="gallery-text-overlay">
+                        <h3>Group Projects</h3>
+                        <p>Collaborative learning.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="academic" data-aos="zoom-in">
+                    <img src="gallery10.jpg" alt="Academic Event 5">
+                    <div class="gallery-text-overlay">
+                        <h3>Library Resources</h3>
+                        <p>Access to knowledge.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="academic" data-aos="zoom-in">
+                    <img src="gallery11.jpg" alt="Academic Event 6">
+                    <div class="gallery-text-overlay">
+                        <h3>Award Ceremony</h3>
+                        <p>Recognizing top performers.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="academic" data-aos="zoom-in">
+                    <img src="gallery31.jpg" alt="Academic Event 7">
+                    <div class="gallery-text-overlay">
+                        <h3>Presentation Skills</h3>
+                        <p>Students presenting their work.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cultural" data-aos="zoom-in">
+                    <img src="gallery5.jfif" alt="Cultural Event 1">
+                    <div class="gallery-text-overlay">
+                        <h3>Cultural Fest</h3>
+                        <p>Celebrating diversity.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cultural" data-aos="zoom-in">
+                    <img src="gallery7.jpg" alt="Cultural Event 2">
+                    <div class="gallery-text-overlay">
+                        <h3>Traditional Dance</h3>
+                        <p>Showcasing local culture.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cultural" data-aos="zoom-in">
+                    <img src="gallery19.jpg" alt="Cultural Event 3">
+                    <div class="gallery-text-overlay">
+                        <h3>Music Performance</h3>
+                        <p>Students on stage.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cultural" data-aos="zoom-in">
+                    <img src="gallery21.jfif" alt="Cultural Event 4">
+                    <div class="gallery-text-overlay">
+                        <h3>Art Exhibition</h3>
+                        <p>Creative expressions.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cultural" data-aos="zoom-in">
+                    <img src="gallery22.jfif" alt="Cultural Event 5">
+                    <div class="gallery-text-overlay">
+                        <h3>Drama Club</h3>
+                        <p>Theatrical performances.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cultural" data-aos="zoom-in">
+                    <img src="gallery39.jfif" alt="Cultural Event 6">
+                    <div class="gallery-text-overlay">
+                        <h3>Festival Celebrations</h3>
+                        <p>Joyous school events.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tour" data-aos="zoom-in">
+                    <img src="gallery4.jpg" alt="Tour 1">
+                    <div class="gallery-text-overlay">
+                        <h3>Educational Tour</h3>
+                        <p>Learning outside the classroom.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="tour" data-aos="zoom-in">
+                    <img src="gallery17.jfif" alt="Tour 2">
+                    <div class="gallery-text-overlay">
+                        <h3>Field Trip Fun</h3>
+                        <p>Exploring new places.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="tour" data-aos="zoom-in">
+                    <img src="gallery18.jfif" alt="Tour 3">
+                    <div class="gallery-text-overlay">
+                        <h3>Nature Walk</h3>
+                        <p>Connecting with nature.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="tour" data-aos="zoom-in">
+                    <img src="gallery24.jfif" alt="Tour 4">
+                    <div class="gallery-text-overlay">
+                        <h3>Historical Site Visit</h3>
+                        <p>Understanding history.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="tour" data-aos="zoom-in">
+                    <img src="gallery25.jfif" alt="Tour 5">
+                    <div class="gallery-text-overlay">
+                        <h3>Adventure Camp</h3>
+                        <p>Team building activities.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="tour" data-aos="zoom-in">
+                    <img src="gallery37.jfif" alt="Tour 6">
+                    <div class="gallery-text-overlay">
+                        <h3>Museum Exploration</h3>
+                        <p>Discovering artifacts.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="science" data-aos="zoom-in">
+                    <img src="gallery2.jfif" alt="Science Event 1">
+                    <div class="gallery-text-overlay">
+                        <h3>Science Fair</h3>
+                        <p>Innovative student projects.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="science" data-aos="zoom-in">
+                    <img src="gallery9.jpg" alt="Science Event 2">
+                    <div class="gallery-text-overlay">
+                        <h3>Lab Experiments</h3>
+                        <p>Hands-on science learning.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="science" data-aos="zoom-in">
+                    <img src="gallery14.jfif" alt="Science Event 3">
+                    <div class="gallery-text-overlay">
+                        <h3>Robotics Club</h3>
+                        <p>Building future tech.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="science" data-aos="zoom-in">
+                    <img src="gallery20.jfif" alt="Science Event 4">
+                    <div class="gallery-text-overlay">
+                        <h3>Biology Dissection</h3>
+                        <p>Exploring life sciences.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="science" data-aos="zoom-in">
+                    <img src="gallery27.jfif" alt="Science Event 5">
+                    <div class="gallery-text-overlay">
+                        <h3>Chemistry Lab</h3>
+                        <p>Practical experiments.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="science" data-aos="zoom-in">
+                    <img src="gallery32.jfif" alt="Science Event 6">
+                    <div class="gallery-text-overlay">
+                        <h3>Physics Demonstration</h3>
+                        <p>Understanding concepts.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="sports" data-aos="zoom-in">
+                    <img src="gallery15.jfif" alt="Sports 1">
+                    <div class="gallery-text-overlay">
+                        <h3>Sports Activities</h3>
+                        <p>Team spirit and fitness.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="computer" data-aos="zoom-in">
+                    <img src="gallery23.jfif" alt="Computer Lab 2">
+                    <div class="gallery-text-overlay">
+                        <h3>vollybal competion</h3>
+                        <p>Physical developement.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="computer" data-aos="zoom-in">
+                    <img src="gallery28.jfif" alt="Computer Lab 3">
+                    <div class="gallery-text-overlay">
+                        <h3>IT Workshop</h3>
+                        <p>Developing tech skills.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="computer" data-aos="zoom-in">
+                    <img src="gallery30.jfif" alt="Computer Lab 4">
+                    <div class="gallery-text-overlay">
+                        <h3>Digital Literacy</h3>
+                        <p>Essential modern skills.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="computer" data-aos="zoom-in">
+                    <img src="gallery34.jfif" alt="Computer Lab 5">
+                    <div class="gallery-text-overlay">
+                        <h3>Graphic Design</h3>
+                        <p>Creative software use.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="computer" data-aos="zoom-in">
+                    <img src="gallery35.jfif" alt="Computer Lab 6">
+                    <div class="gallery-text-overlay">
+                        <h3>Tech Projects</h3>
+                        <p>Student innovations.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities" data-aos="zoom-in">
+                    <img src="gallery12.jfif" alt="Facilities 1">
+                    <div class="gallery-text-overlay">
+                        <h3>School Campus</h3>
+                        <p>Our learning environment.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facilities" data-aos="zoom-in">
+                    <img src="gallery13.jfif" alt="Facilities 2">
+                    <div class="gallery-text-overlay">
+                        <h3>Playground</h3>
+                        <p>Space for recreation.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facilities" data-aos="zoom-in">
+                    <img src="gallery16.jfif" alt="Facilities 3">
+                    <div class="gallery-text-overlay">
+                        <h3>Library</h3>
+                        <p>A quiet place to study.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facilities" data-aos="zoom-in">
+                    <img src="gallery26.jfif" alt="Facilities 4">
+                    <div class="gallery-text-overlay">
+                        <h3>Auditorium</h3>
+                        <p>Venue for events.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facilities" data-aos="zoom-in">
+                    <img src="gallery29.jfif" alt="Facilities 5">
+                    <div class="gallery-text-overlay">
+                        <h3>Cafeteria</h3>
+                        <p>Healthy meals for students.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facilities" data-aos="zoom-in">
+                    <img src="gallery33.png" alt="Facilities 6">
+                    <div class="gallery-text-overlay">
+                        <h3>Transportation</h3>
+                        <p>Safe school buses.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facilities" data-aos="zoom-in">
+                    <img src="gallery36.jfif" alt="Facilities 7">
+                    <div class="gallery-text-overlay">
+                        <h3>Sports Ground</h3>
+                        <p>Facilities for athletics.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facilities" data-aos="zoom-in">
+                    <img src="gallery38.jfif" alt="Facilities 8">
+                    <div class="gallery-text-overlay">
+                        <h3>Art Room</h3>
+                        <p>Space for creativity.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facilities" data-aos="zoom-in">
+                    <img src="gallery40.jfif" alt="Facilities 9">
+                    <div class="gallery-text-overlay">
+                        <h3>Music Room</h3>
+                        <p>Equipped for practice.</p>
+                    </div>
+                </div>
+
+                <!-- Add more items for each category -->
+
+            </div>
+            <!-- Removed the View More button -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Everest Public School Logo">
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about-us">About Us</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="index.html#notice-board">Notice Board</a></li>
+                        <li><a href="index.html#contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com/photo/?fbid=568372239361537&set=a.122012700664162"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/?&"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Everest Public School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Controls: Back to Top and Dark Mode Toggle -->
+    <div class="fixed-controls">
+        <button id="back-to-top" aria-label="Back to top" style="display: none;"> <!-- Initially hidden -->
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-sun"></i>
+        </button>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="gallery.js"></script> <!-- Link the gallery script -->
+</body>
+
+</html>
