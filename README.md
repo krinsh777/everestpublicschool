@@ -1,2 +1,2 @@
-# everestpublicschoonp
+# everestpublicschool
 website
